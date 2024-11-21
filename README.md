@@ -14,5 +14,4 @@ It uses data from the NYC Department of Education and applies statistical method
 - Manhattan has the highest standard deviation in SAT scores among boroughs.
 - The top 10 schools based on combined SAT scores are visualized below:
 
-![Top 10 Schools](images/top_10_schools.png)
-
+![Top 10 Schools](images/top_10_SAT_schools.png)
