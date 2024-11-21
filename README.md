@@ -1,5 +1,5 @@
 
-Given: [school.csv](data/school.csv)
+Given dataset: [school.csv](data/school.csv)
 
 ### Inspecting the Data
 
