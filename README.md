@@ -32,7 +32,7 @@ We created a DataFrame `best_math_schools`, containing the **school_name** and *
 - Many of the top-performing schools have **average math scores well above 700**, suggesting a highly competitive environment in math for top-tier schools in NYC.
 - The math results can serve as a basis for comparing overall academic performance and may highlight schools with specialized programs or better resources in math education.
 
-
+![Top 10 Schools](images/Question1_Chart.png)
 
 ---
 
@@ -46,7 +46,7 @@ We saved the results as a DataFrame `top_10_schools`, including the **school_nam
 - The difference in SAT scores between the **top school** and the **10th-ranked school** is significant, roughly 200 points, indicating a gap between top and mid-level performers.
 - These top 10 schools represent the cream of NYC’s academic performance and serve as a model for other schools seeking to improve SAT scores and overall academic outcomes.
 
-![Top 10 Schools](images/top_10_SAT_schools.png)
+![Top 10 Schools](images/Question2_Chart.png)
 ---
 
 ### Question 3: Which single borough has the largest standard deviation in the combined SAT score?
@@ -63,6 +63,8 @@ We saved the results in the DataFrame `largest_std_dev`, which contains:
 - This suggests that while some schools in Manhattan are top performers, others are far behind, and targeted educational interventions could help reduce this variability.
 - The high **standard deviation** in Manhattan reveals significant differences in the academic outcomes of its schools, despite having several top-ranking schools.
 
+![Largest STD](images/Question3.png)
+
 ```markdown   
 **Borough-Level Analysis:**
    Manhattan has the highest standard deviation in SAT scores, indicating the greatest variability among schools. Here are the borough statistics:
@@ -73,6 +75,9 @@ We saved the results in the DataFrame `largest_std_dev`, which contains:
 
 ---
 ```
+![Manhattan STD](images/Question3.1_Chart.png)
+
+
 ### Summary of Insights:
 - **Question 1:** Identified the best math-performing schools based on achieving 80% of the maximum score in math.
 - **Question 2:** Highlighted the top 10 schools in NYC by combined SAT scores, with Stuyvesant High School topping the list.
