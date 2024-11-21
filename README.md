@@ -1,4 +1,4 @@
-## Overview
+
 Given: [school.csv](data/school.csv)
 
 ### Inspecting the Data
