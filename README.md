@@ -1,2 +1,2 @@
-# SCHOOL_SAT_Analysis
-A beginner data analysis project focused on NYC SAT scores analysis
+# SCHOOL_SAT_Analysis (Datacamp)
+Beginner level data analysis project focused on NYC SAT scores analysis
