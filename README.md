@@ -71,7 +71,7 @@ We saved the results in the DataFrame `largest_std_dev`, which contains:
    | Manhattan  | 89          | 1340.13     | 230.29  |
 
 ---
-
+```
 ### Summary of Insights:
 - **Question 1:** Identified the best math-performing schools based on achieving 80% of the maximum score in math.
 - **Question 2:** Highlighted the top 10 schools in NYC by combined SAT scores, with Stuyvesant High School topping the list.
