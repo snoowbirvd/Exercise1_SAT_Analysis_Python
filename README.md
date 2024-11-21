@@ -32,7 +32,7 @@ We created a DataFrame `best_math_schools`, containing the **school_name** and *
 - Many of the top-performing schools have **average math scores well above 700**, suggesting a highly competitive environment in math for top-tier schools in NYC.
 - The math results can serve as a basis for comparing overall academic performance and may highlight schools with specialized programs or better resources in math education.
 
-![Top 10 Schools](images/top_10_SAT_schools.png)
+
 
 ---
 
@@ -46,6 +46,7 @@ We saved the results as a DataFrame `top_10_schools`, including the **school_nam
 - The difference in SAT scores between the **top school** and the **10th-ranked school** is significant, roughly 200 points, indicating a gap between top and mid-level performers.
 - These top 10 schools represent the cream of NYC’s academic performance and serve as a model for other schools seeking to improve SAT scores and overall academic outcomes.
 
+![Top 10 Schools](images/top_10_SAT_schools.png)
 ---
 
 ### Question 3: Which single borough has the largest standard deviation in the combined SAT score?
