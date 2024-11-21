@@ -1,6 +1,27 @@
 ## Overview
 Given: [school.csv](data/school.csv)
 
+### Inspecting the Data
+
+```
+[5 rows x 7 columns]
+(375, 7)
+<class 'pandas.core.frame.DataFrame'>
+RangeIndex: 375 entries, 0 to 374
+Data columns (total 7 columns):
+ #   Column           Non-Null Count  Dtype  
+---  ------           --------------  -----  
+ 0   school_name      375 non-null    object 
+ 1   borough          375 non-null    object 
+ 2   building_code    375 non-null    object 
+ 3   average_math     375 non-null    int64  
+ 4   average_reading  375 non-null    int64  
+ 5   average_writing  375 non-null    int64  
+ 6   percent_tested   355 non-null    float64
+dtypes: float64(1), int64(3), object(3)
+memory usage: 20.6+ KB
+
+```
 ### Question 1: Which NYC schools have the best math results?
 The goal of this question is to identify schools with the best math results, defined as schools that scored at least 80% of the maximum possible math score (800).
 
