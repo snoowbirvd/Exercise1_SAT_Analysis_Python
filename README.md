@@ -22,6 +22,11 @@ dtypes: float64(1), int64(3), object(3)
 memory usage: 20.6+ KB
 
 ```
+### Critical Variables
+- **Total Sat Scores**
+- **Math Performance (Average Math Score)**
+- **Standard Deviation of SAT Scores**
+
 ### Question 1: Which NYC schools have the best math results?
 The goal of this question is to identify schools with the best math results, defined as schools that scored at least 80% of the maximum possible math score (800).
 
