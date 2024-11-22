@@ -1,5 +1,6 @@
 
 Given dataset: [school.csv](data/school.csv)
+📊Category: Data Analysis and Visualization
 
 ### Inspecting the Data
 
