@@ -1,8 +1,6 @@
 
 Given dataset: [school.csv](data/school.csv)
 
-📊Category: Education Analytics
-
 ### Inspecting the Data
 
 ```
