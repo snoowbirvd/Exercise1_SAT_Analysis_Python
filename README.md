@@ -54,6 +54,7 @@ best_math_schools = best_math_schools_sorted[['school_name', 'average_math']]
 # Display the result
 print(best_math_schools)
 
+#checking the top 10
 # 3. Sort the values of average_math column in the created dataframe = best_math_schools, from highest to lowest (descending order)
 best_math_schools_sorted = best_math_schools.sort_values(by='average_math', ascending=False)
 print(best_math_schools_sorted)
