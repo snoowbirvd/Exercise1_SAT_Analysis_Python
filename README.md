@@ -28,7 +28,7 @@ memory usage: 20.6+ KB
 - **Standard Deviation of SAT Scores**
 
 ### Question 1: Which NYC schools have the best math results?
-The goal of this question is to identify schools with the best math results, defined as schools that scored at least 80% of the maximum possible math score (800).
+- defined as schools that scored at least 80% of the maximum possible math score (800)
 
 ```
 # Objective process
