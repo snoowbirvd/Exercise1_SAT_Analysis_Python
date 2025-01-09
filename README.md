@@ -30,6 +30,39 @@ memory usage: 20.6+ KB
 ### Question 1: Which NYC schools have the best math results?
 The goal of this question is to identify schools with the best math results, defined as schools that scored at least 80% of the maximum possible math score (800).
 
+```
+# Objective process
+# 1. Define threshold for "best" math results
+# Ranges of score 0 and 800 (max possible score)
+# "best" math score threshold = 80%
+# 80% of 800 = 0.8×800 = 640
+
+math_threshold = 0.8 * 800
+
+# 2. Create a new dataframe for NYC schools that have the best math results.
+# Filter schools with this boolean condition: average_math column >= math_threshold which is 640
+# Filter out the dataframe with only the rows where the condition is satisfied: schools_copy[condition]
+
+best_math_schools = schools_copy[schools_copy['average_math'] >= math_threshold]
+
+# Sort by 'average_math' in descending order after filtering
+best_math_schools_sorted = best_math_schools.sort_values(by='average_math', ascending=False)
+
+# Select only the relevant columns: "school_name" and "average_math"
+best_math_schools = best_math_schools_sorted[['school_name', 'average_math']]
+
+# Display the result
+print(best_math_schools)
+
+# 3. Sort the values of average_math column in the created dataframe = best_math_schools, from highest to lowest (descending order)
+best_math_schools_sorted = best_math_schools.sort_values(by='average_math', ascending=False)
+print(best_math_schools_sorted)
+
+# 4. After sorting, extract the top 10
+top_10_math_schools = best_math_schools_sorted.head(10)
+print(top_10_math_schools)
+```
+
 We created a DataFrame `best_math_schools`, containing the **school_name** and **average_math** columns, and sorted the schools by **average_math** in descending order.
 
 ### Insights:
@@ -45,7 +78,20 @@ We created a DataFrame `best_math_schools`, containing the **school_name** and *
 We created a new `total_SAT` column by summing the **math**, **reading**, and **writing** scores for each school, and sorted them to find the top 10 performing schools.
 
 We saved the results as a DataFrame `top_10_schools`, including the **school_name** and **total_SAT** columns.
+```
+# Objective process
+#1. Create a new column 'Total_SAT' to the dataframe with the calculated total SAT score for each school (Pandas) 
+# combined_score = average_math + average_reading + average_writing
+schools_copy['total_SAT'] = schools_copy['average_math'] + schools_copy['average_reading'] + schools_copy['average_writing']
 
+#2. Sort the dataframe by 'total_SAT' in descending order
+top_schools_sorted = schools_copy.sort_values(by='total_SAT', ascending=False)
+
+#3. Select the top 10 schools and include only the 'school_name' and 'total_SAT' columns
+    # Display the result
+top_10_schools = top_schools_sorted[['school_name', 'total_SAT']].head(10)
+print(top_10_schools)
+```
 ### Insights:
 - **Stuyvesant High School** leads the top 10 schools with the highest combined SAT score of **2271**.
 - The difference in SAT scores between the **top school** and the **10th-ranked school** is significant, roughly 200 points, indicating a gap between top and mid-level performers.
@@ -61,7 +107,20 @@ We saved the results in the DataFrame `largest_std_dev`, which contains:
 - **num_schools**: The number of schools in that borough.
 - **average_SAT**: The mean SAT score in that borough.
 - **std_SAT**: The standard deviation of SAT scores in that borough.
+```
+# Step 1: Group data by 'borough' and calculate required statistics
+borough_stats = schools_copy.groupby('borough')['total_SAT'].agg(
+    std_SAT='std',       # Standard deviation of total_SAT
+    average_SAT='mean',  # Mean of total_SAT
+    num_schools='count'  # Count of schools in each borough
+).reset_index()
 
+# Round all numeric values to two decimal places
+borough_stats = borough_stats.round(2)
+
+# Display the result (All boroughs with their stats)
+print(borough_stats)
+```
 ### Insights:
 - **Manhattan** has the highest standard deviation in SAT scores, indicating a **wide disparity** in school performance.
 - This suggests that while some schools in Manhattan are top performers, others are far behind, and targeted educational interventions could help reduce this variability.
